@@ -1,0 +1,13 @@
+import pandas as pd
+
+x = pd.read_csv('...') : membaca CSV
+pd.read_csv('...', index_col = 0) : menghapus index 0(unnamed coulumn : 0)
+pd.DataFrame() : membuat dataframe
+DF.index = [...] : mengganti nama index seperti yang ada di list
+
+DF.loc["..."] : menampilkan dataframe sesuai kata2 yang ada di dalam []
+DF.loc[ ["baris"],["kolom"] ] : letak pengambilan data sesuai baris dan kolom
+
+DF.iloc[ ] : menampilkan dataframe sesuai angka index
+DF.iloc[ [baris],[kolom] ] : letak pengambilan data sesuai baris dan kolom
+cars["COUNTRY"] = cars["country"].apply(str.upper)

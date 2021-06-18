@@ -1,0 +1,18 @@
+_.sorted(isi, key, reverse=True/False) : menyusun ulang isi index secara berurutan
+_.index(isi) = memberi info letak index isi
+_.count(isi) = menghitung jumlah isi yang ada di list / variable
+_.append() = menambah element
+_.remove() = menghilangkan element di index pertama
+_.info() = menampilkan output info data (null, length)
+reverse() = menampilkan urutan element mulai dari akhir
+enumerate() mengembalikan objek enumerate yaitu objek iterable yang tiap itemnya berpasangan dengan indeks
+
+if(kondisi):
+    print()
+elif(kondisi):
+    print()
+else:
+    print()
+
+for index, x in list: = index mengindetifikasikan nomer indeks
+

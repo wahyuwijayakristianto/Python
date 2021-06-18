@@ -1,0 +1,7 @@
+dictionary{keys:values) : untuk memilih index unik (keys) & melihat table dengan unique keys
+dict.keys() : menampilkan semua penyebut
+dict.keys('kunci') : menampilkan nilai dari spesifik penyebut
+dict.values() : menampilkan semua nilai 
+dict['kunci'] : mengeluarkan nilai dari kunci yang di pilih
+print('kunci' in dict) : mengeluarkan output True jika kunci tersedia di dict
+dict['kunci'] = nilai : menambah dict

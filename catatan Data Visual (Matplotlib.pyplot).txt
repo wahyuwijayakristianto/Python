@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+plt.plot() : menampilkan data berbentuk line
+plt.scatter() : menampilkan data berbentuk scatter/titik. biasanya untuk mencari relasi
+plt.hist() : menampilkan data berbentuk histogram
+plt.clf() : merefresh plot agar tidak ditampilkan bertabrakan (digunakan setelah plt.show())
+
+plt.xlabel("n") : memberi nama x-axis
+plt.ylabel("n") : memberi nama y-axis
+plt.title("n") : memberi judul plot
+plt.xticks([a,b,c], : mengganti nilai x seperti yang ada di index
+            ["A","B","C"]) : memberi nama nilai x seperti yang ada di index
+plt.text(x,y,"n") : menambahkan teks sesuai letak axis x dan y. "n" adalah teks yang akan muncul
+plt.grid(True) : menambahkan banyak sumbu garis membentuk kotak-kotak yang ada di plot
+
+
+plt.scatter(s = n) : size,
+plt.scatter(c= col) : memberi perbedaan warna antara semua bubbles
+plt.scatter(alpha = n) : kontras transparan warna. diidentikasikan dari 0 (transparan) - 1 (makin tebal)

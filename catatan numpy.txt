@@ -1,0 +1,21 @@
+np.array(list) : menjadikan list agar bisa di operasikan(kali bagi dll)
+list[baris][kolom]
+list[baris,kolom]
+list[:,0] : mengambil semua baris dengan kolom di index 0
+
+np.logical_and(logc,logc)
+np.logical_or(logc,logc) 
+np.logical_not(logc,logc)
+np.sum()
+np.median()
+np.std() : standard deviasi
+np.corrcoef() : korelasi
+np.nditer(dict) : menampilkan dict secara urut kebawah (tidak menyamping
+np.random.rand() : RAND mengembalikan bilangan riil acak yang terdistribusi secara merata yang lebih besar atau sama dengan 0 dan kurang dari 1. Bilangan riil acak akan dikembalikan setiap kali lembar kerja dihitung.
+np.random.seed() : 
+np.random.randint(index1,index2) : mengembalikan nilai random bilangan bulat
+np.tranpose() : membalikan x axis dan y axis
+
+for lab, row in cars.iterrows() :
+    print(lab)
+    print(row)
