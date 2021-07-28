@@ -3,11 +3,34 @@ import pandas as pd
 x = pd.read_csv('...') : membaca CSV
 pd.read_csv('...', index_col = 0) : menghapus index 0(unnamed coulumn : 0)
 pd.DataFrame() : membuat dataframe
+
+DF['namakolom'] : memanggil kolom sesuai nama tsb
+DF[['namakolom1', 'namakolom2']] : memanggil banyak kolom
+DF[(DF['namakolom1']<x)& (DF['namakolom2'] == 'x')] : memanggil kolom dengan & / |
+df[df['namakolom'].isin(["value_1", "value_2"])] : memanggil value sesuai yang ada di dalam isin
 DF.index = [...] : mengganti nama index seperti yang ada di list
+DF.namakolom / DF.['namakolom'] : sama saja
+DF.drop('nama_kolom', axis= , inplace=True) : menghapus kolom
+DF.drop_duplicate('nama_kolom') : menghilangkan duplikasi value kolom
 
 DF.loc["..."] : menampilkan dataframe sesuai kata2 yang ada di dalam []
 DF.loc[ ["baris"],["kolom"] ] : letak pengambilan data sesuai baris dan kolom
-
 DF.iloc[ ] : menampilkan dataframe sesuai angka index
 DF.iloc[ [baris],[kolom] ] : letak pengambilan data sesuai baris dan kolom
 cars["COUNTRY"] = cars["country"].apply(str.upper)
+df = df.rename(columns={'Gender': 'gender', 'Age': 'age',
+                        'Annual Income (k$)': 'annual_income',
+                        'Spending Score (1-100)': 'spending_score'})
+DF.describe() : menampilkan output mean, count, std dll
+DF.columns : menampilkan output semua nama kolom
+DF.index : menampilkan rangeindex(start=... , stop=... , step=1)
+
+DF.sort_values('nama_kolom', ascending=boolean) : mengurutkan berdasarkan nama kolom
+DF.sort_values(['nama_kolom1','nama_kolom2'] , ascending=[boolean1,boolean2]) : mengurutkan berdasarkan nama kolom
+DF['namakolom'].value_counts(sort = bool, normalize = bool) : menghitung jumlah value yang duplicate, sort untuk mengurutkan, normalize untuk menghitung porsi value/mean
+DF.groupby('namakolom')['targetkolom'].statistic_func() : mengelompokkan value kolom dengan targetkolom disesuaikan dengan fungsi statistik
+DF.agg([np.sum,np.mean,dst]) : menampilkan pecahan menjadi kesatuan fungsi
+DF.pivot_table(values='namakolom', index='namakolom2', columns='namakolom3',aggfunc=(np.sum,np.mean))
+
+DF.sort_index(level='nama_index', ascending=bool)
+DF.sort_index(level=['nama_index1','nama_index2'], ascending=[bool1,bool2])
