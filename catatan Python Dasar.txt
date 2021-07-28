@@ -1,11 +1,22 @@
-_.sorted(isi, key, reverse=True/False) : menyusun ulang isi index secara berurutan
+sorted(isi_DF/list, key, reverse=True/False) : menyusun ulang isi index secara berurutan
 _.index(isi) = memberi info letak index isi
 _.count(isi) = menghitung jumlah isi yang ada di list / variable
-_.append() = menambah element
+_.append(isi) = menambah element
+list[i:i] = mengubah value secara slicing sesuai index 
+_.insert(index,value) = memasukan value sesuai letak sebelum index berada
 _.remove() = menghilangkan element di index pertama
 _.info() = menampilkan output info data (null, length)
+_.pop(isi_angka_index) = selain menghapus anggota list, juga mengembalikan nilai indeks anggota tersebut. Hal ini berguna bila kita ingin memanfaatkan indeks dari anggota yang terhapus untuk digunakan kemudian.
+_.popitem(last=True/False) = menghapus anggota list sesuai last / acak ketika tidak di beri boolean
 reverse() = menampilkan urutan element mulai dari akhir
 enumerate() mengembalikan objek enumerate yaitu objek iterable yang tiap itemnya berpasangan dengan indeks
+zip(isi, isi) = mencampurkan isi, contoh isi1 = (a,b,c) isi2 = (d,e,f) zip(isi1,isi2) = ((a,d),(b,e),(c,f))
+del dict[value] 
+df['gender'].replace(['Female', 'Male'], [0,1], inplace=True)
+
+list1.union(list2) = (gabungan) menggabungkan list1 dan list2 dengan value hanya 1 saja (double value tidak ada)
+list1.intersection(list2) = (irisan) menampilkan value yang sama antara list1 dan list2
+
 
 if(kondisi):
     print()
