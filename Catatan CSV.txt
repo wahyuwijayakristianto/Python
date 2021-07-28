@@ -1,0 +1,17 @@
+open('file', mode = 'r') : membuka file dan mengembalikan objek file
+Mode	Deskripsi
+‘r’	Membuka file untuk dibaca
+‘w’	Membuka file untuk ditulis. Mode ini akan membuat baris baru bila file masih kosong atau menimpa teks ke yang sudah ada bila file tidak kosong.
+‘x’	Membuka file untuk pembuatan eksklusif. Bila file sudah ada, operasi akan gagal.
+‘a’	Membuka file untuk di append (ditambahkan) pada akhir file tanpa menimpanya. Membuat file baru jika filenya belum ada
+‘t’	Membuka file dalam mode teks
+‘b’	Membuka file dalam mode biner
+‘+’	Membuka file untuk diupdate (baca dan tulis)
+csv.reader() :
+.close() : 
+
+for row in csv.DictReader(csvfile):
+    # Print each row 
+    print(row)
+    # Add the rank and name to the dictionary: baby_names
+    baby_names[row['RANK']] = row['NAME']

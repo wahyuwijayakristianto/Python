@@ -1,0 +1,4 @@
+Counter adalah adalah alat untuk menghitung, memvalidasi, dan mempelajari lebih lanjut tentang elemen dalam kumpulan data yang ditemukan di modul collection.
+_.most_common(a) : menampilkan elemen yang paling sering muncul, a untuk jumlah limit tampil elemen output
+
+defaultdict

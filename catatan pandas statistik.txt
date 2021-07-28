@@ -1,0 +1,5 @@
+DF.mean() : rata-rata setiap kolom
+DF.median() : nilai tengah setiap kolom
+DF.max() : nilai tertinggi
+DF.min() : nilai terendah
+DF.cumsum() : menambahkan secara berkelanjutan (kumulatif)

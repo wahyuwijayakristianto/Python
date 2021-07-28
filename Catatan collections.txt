@@ -1,0 +1,2 @@
+from collection import namedtuple : membuat tuple mempunyai keys
+DateDetails = namedtuple('DateDetails', ['date', 'stop', 'riders'])
