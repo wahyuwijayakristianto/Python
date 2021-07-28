@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 plt.plot() : menampilkan data berbentuk line
 plt.scatter() : menampilkan data berbentuk scatter/titik. biasanya untuk mencari relasi
 plt.hist() : menampilkan data berbentuk histogram
+plt.bar() : 
 plt.clf() : merefresh plot agar tidak ditampilkan bertabrakan (digunakan setelah plt.show())
 
 plt.xlabel("n") : memberi nama x-axis
@@ -9,10 +10,22 @@ plt.ylabel("n") : memberi nama y-axis
 plt.title("n") : memberi judul plot
 plt.xticks([a,b,c], : mengganti nilai x seperti yang ada di index
             ["A","B","C"]) : memberi nama nilai x seperti yang ada di index
-plt.text(x,y,"n") : menambahkan teks sesuai letak axis x dan y. "n" adalah teks yang akan muncul
+plt.text(x,y,"n",fontsize=) : menambahkan teks sesuai letak axis x dan y. "n" adalah teks yang akan muncul
+plt.style.use('ggplot'/'fivethirtyeight','seaborn') : mengubah bentuk plot
 plt.grid(True) : menambahkan banyak sumbu garis membentuk kotak-kotak yang ada di plot
+
+plt.plot(label="n") : memberikan nama garis sesuai warna nya (butuh plt.legend untuk menampilkannya)
+plt.legend() : 
+plt.plot(linewidth=a) : mengatur lebar garis sesuai besarnya angka
+plt.plot(color='n') : mewarnai garis
+plt.plot(linestyles=":"/"-"/"--"/"-.") = mengubah garis sambung menjadi patah-patah
+plt.plot(marker="x"/"s"/"o"/"d"/"*"/"h") : mengubah bentuk titik plot. x jadi X, s jadi kotak, o jadi O, d jadi diamond, * jadi *, h jadi hexagon
 
 
 plt.scatter(s = n) : size,
 plt.scatter(c= col) : memberi perbedaan warna antara semua bubbles
 plt.scatter(alpha = n) : kontras transparan warna. diidentikasikan dari 0 (transparan) - 1 (makin tebal)
+plt.scatter(yerr=n) : menambahkan bar error pada bar x
+
+plt.hist(DF, bins=a) : mengatur lebar histogram
+plt.hist(range=(a,a) : mengatur jarak nilai
