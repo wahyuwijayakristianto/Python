@@ -1,0 +1,3 @@
+from datetime import datetime
+datetime.strftime(list,'%m/%d/%y')
+list..isoformat()
